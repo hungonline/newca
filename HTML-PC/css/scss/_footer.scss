@@ -1,0 +1,61 @@
+.footer{
+    padding-top: 80px;
+    background: #Fff;
+    .logo{
+        display: inline-block;
+        width: 132px;
+        margin-bottom: 45px;
+    }
+    .title{
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    ul{
+        li{
+            margin-bottom: 15px;
+            a{
+                color: #750E6C;
+                font-size: 14px;
+            }
+        }
+    }
+    .copy_right{
+        border-top: 1px solid #E4E4EB;
+        padding: 15px 0;
+        color: #555770;
+        font-size: 12px;
+        .flex{
+            align-items: center;
+        }
+        a{
+            color: #555770;
+        }
+        .colum{
+            justify-content: space-between;
+        }
+        .chinh-sach{
+            span{
+                margin: 0 3px;
+            }
+        }
+        .colum_2{
+            .languages{
+                margin-left: 40px;
+                margin-right: 35px;
+                display: flex;
+                align-items: center;
+                color: #8F90A6;
+                i{
+                    color: #28293D;
+                    margin: -3px 4px 0 0;
+                    font-size: 14px;
+                }
+                .active{
+                    color: #28293D;
+                }
+            }
+        }
+    }
+}
