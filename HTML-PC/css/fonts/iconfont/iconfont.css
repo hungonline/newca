@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1624457632108');
-	src: url('iconfont.eot?#iefix-1624457632108') format('embedded-opentype'),
-		url('iconfont.woff2?1624457632108') format('woff2'),
-		url('iconfont.woff?1624457632108') format('woff'),
-		url('iconfont.ttf?1624457632108') format('truetype');
+	src: url('iconfont.eot?1624530497189');
+	src: url('iconfont.eot?#iefix-1624530497189') format('embedded-opentype'),
+		url('iconfont.woff2?1624530497189') format('woff2'),
+		url('iconfont.woff?1624530497189') format('woff'),
+		url('iconfont.ttf?1624530497189') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,24 +36,40 @@ Glyphs list
 			content: '\ea01';
 		}
 
-		 .iconfont-close2:before {
+		 .iconfont-cart:before {
 			content: '\ea02';
 		}
 
-		 .iconfont-lang:before {
+		 .iconfont-close2:before {
 			content: '\ea03';
 		}
 
-		 .iconfont-mail:before {
+		 .iconfont-lang:before {
 			content: '\ea04';
 		}
 
-		 .iconfont-phone:before {
+		 .iconfont-login:before {
 			content: '\ea05';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-mail:before {
 			content: '\ea06';
+		}
+
+		 .iconfont-Minus:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-phone:before {
+			content: '\ea08';
+		}
+
+		 .iconfont-Plus:before {
+			content: '\ea09';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea0a';
 		}
 
 		

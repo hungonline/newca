@@ -3,3 +3,9 @@
         max-width: 1230px;
     }
 }
+
+@media (max-width: 991px) {
+    .overlay {
+        display: none
+    }
+}

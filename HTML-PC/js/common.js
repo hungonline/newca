@@ -35,19 +35,18 @@
         });
 
 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= 42) {
-                $('#lp1_box1').addClass('pin');
-            } else {
-                $('#lp1_box1').removeClass('pin');
-            }
-        });
-
         $("#to_top").click(function () {
             $("html, body").animate({
                 scrollTop: 0
             });
             return false;
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 40) {
+                $('.topnav ').addClass('sticky');
+            } else {
+                $('.topnav ').removeClass('sticky');
+            }
         });
     }
 
@@ -71,11 +70,59 @@
                 width: 'toggle'
             });
         });
+        $('#vibeji-ham').off('click').on('click', function () {
+            $(this).toggleClass('open');
+            $('.main-menu').toggleClass('open');
+            $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+        });
+        if (screen.width < 576) {
+            $('.togle-mobile').find('.title').click(function () {
+                if (!$(this).hasClass("active")) {
+                    $(this).addClass("active");
+                    $(this).next('ul').slideDown();
+                } else {
+                    $(this).removeClass("active");
+                    $(this).next('ul').slideUp();
+                }
+            });
+        }
+        $('.sub_menu').click(function () {
+            if ($(this).next('.level2').css('display') == 'none') {
+                $(this).html('-');
+            } else {
+                $(this).html('+');
+            };
+            $(this).next('.level2').slideToggle("slow", function () {});
+        });
+
+        // Minus and Plus
+        var quantitiy = 0;
+        $('.quantity-right-plus').click(function (e) {
+            e.preventDefault();
+            var quantity = parseInt($('#quantity').val());
+            $('#quantity').val(quantity + 1);
+
+        });
+        $('.quantity-left-minus').click(function (e) {
+            e.preventDefault();
+            var quantity = parseInt($('#quantity').val());
+            if (quantity > 0) {
+                $('#quantity').val(quantity - 1);
+            }
+        });
+
     }
 
     //Hover
     function hover() {
-
+        $('.menu-c2').hover(
+            function () {
+                $('body').addClass('active');
+            },
+            function () {
+                $('body').removeClass('active');
+            }
+        );
     }
 
     //slide Gallery

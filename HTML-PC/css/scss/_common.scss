@@ -207,14 +207,14 @@ select {
 }
 
 #to_top {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: #2f2f2f;
-    border: 1px solid rgba(255, 255, 255, .3);
-    line-height: 40px;
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    line-height: 30px;
     text-align: center;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 20px;
     color: #fff;
 }
@@ -294,6 +294,7 @@ select {
     }
 
     @media (max-width: 900px) {
+
         &__4,
         &__5 {
             grid-template-columns: repeat(3, 1fr);
@@ -337,21 +338,98 @@ select {
     }
 }
 
-.social-btn{
+.social-btn {
     display: flex;
-    a{
+
+    a {
         width: 32px;
         height: 32px;
         border-radius: 50%;
         background: #750E6C;
-        color: #fff!important;
+        color: #fff !important;
         font-size: 15px;
         text-align: center;
         line-height: 34px;
         margin-left: 4px;
     }
 }
-.padding_insert{
+
+.padding_insert {
     padding-left: 3.33%;
     padding-right: 3.33%
+}
+
+.btn-default {
+    display: inline-block;
+    color: #750E6C;
+    font-weight: 500;
+    border: 1px solid #750E6C;
+    line-height: 42px;
+    border-radius: 6px;
+    padding: 0 22px;
+    text-align: center;
+
+    &:hover {
+        background: #FFDC52;
+        border: 1px solid #FFDC52;
+        color: #1C1C28
+    }
+
+    &.full {
+        width: 100%;
+    }
+
+    &.min {
+        line-height: 34px;
+        font-size: 14px
+    }
+
+    &.yellow {
+        background: #FFDC52;
+        border: 1px solid #FFDC52;
+    }
+
+    &.txt_black {
+        color: #1C1C28
+    }
+}
+
+.form-search-default {
+    position: relative;
+    max-width: 588px;
+
+    input {
+        background: #fff;
+        border: 0;
+        height: 48px;
+        padding-right: 15px;
+        padding-left: 48px;
+        font-size: 14px;
+        width: 100%;
+        outline: 0;
+        border-radius: 6px;
+    }
+
+    .icon_seach_web {
+        position: absolute;
+        background: none;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        border: 0;
+        left: 0;
+        top: 0;
+        color: #8F90A6;
+        cursor: pointer;
+    }
+}
+
+.color-gray {
+    color: #5557
+}
+
+.title-cate {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
