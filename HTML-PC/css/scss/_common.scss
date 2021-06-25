@@ -295,7 +295,9 @@ input {
         }
     }
 }
-
+.tooltip{
+    opacity: 1!important;
+}
 @media (min-width: 576px) {
     .col-sm-2dot4 {
         -webkit-box-flex: 0;
