@@ -73,17 +73,30 @@ a {
         display: table;
     }
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
 .medium {
-    font-weight: 600
+    font-weight: 500
 }
 
 .bold {
     font-weight: bold
 }
-
+.txt_12{
+    font-size: 12px;
+}
+.txt_13{
+    font-size: 13px;
+}
 .txt_16 {
     font-size: 16px
+}
+.txt_20 {
+    font-size: 20px
+}
+.txt_24 {
+    font-size: 24px
 }
 
 .mb0 {
@@ -129,6 +142,9 @@ a {
 .mb40 {
     margin-bottom: 40px;
 }
+.mb60 {
+    margin-bottom: 60px;
+}
 
 .mb80 {
     margin-bottom: 80px;
@@ -154,8 +170,8 @@ a {
     margin-top: 20px;
 }
 
-.mt25 {
-    margin-top: 25px;
+.mt24 {
+    margin-top: 24px;
 }
 
 .mt30 {

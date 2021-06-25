@@ -127,7 +127,41 @@
 
     //slide Gallery
     function swiper() {
-
+        var swiperCustomer = new Swiper(".box-customer .swiper-container", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-customer-next",
+                prevEl: ".swiper-customer-prev",
+              },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+        var swiperWhy = new Swiper(".box-why-choose .swiper-container", {
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: ".swiper-why-next",
+                prevEl: ".swiper-why-prev",
+              },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+        var swiperService = new Swiper(".list-service .swiper-container", {
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: ".swiper-service-next",
+                prevEl: ".swiper-service-prev",
+              },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
     }
 
     $(function () {
