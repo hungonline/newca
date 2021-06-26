@@ -10,7 +10,7 @@
     .title-cate{
         font-size: 32px;
     }
-    .bg-padding,.box-customer,.box-dangky{
+    .bg-padding,.box-customer,.box-dangky,.padding_80{
         padding: 60px 0;
     }
     .mb80{
@@ -24,7 +24,7 @@
     .title-cate{
         font-size: 28px;
     }
-    .bg-padding,.box-customer,.box-dangky{
+    .bg-padding,.box-customer,.box-dangky,.padding_80{
         padding: 40px 0;
     }
     .mb80{
@@ -40,7 +40,7 @@
     }
     .range-holder{
         flex-wrap: wrap;
-        padding: 20px 0 70px 0;
+        padding: 20px 20px 70px 20px;
         .range-input{
             width: 100%;
             margin-bottom: 40px;
@@ -57,10 +57,10 @@
             width: 100%;
         }
         .infobox{
-            width: 100px;
-            height: 77px;
-            left: -15px;
-            bottom: -103px;
+            width: 90px;
+            height: 64px;
+            left: -13px;
+            bottom: -93px;
             &::after{
                 left: 15px;
                 margin-left: 2px;
@@ -68,6 +68,7 @@
         }
         .titlebar{
             padding-bottom: 0;
+            font-size: 12px;
         }
         .info-price{
             font-size: 11px;

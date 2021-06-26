@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1624595061386');
-	src: url('iconfont.eot?#iefix-1624595061386') format('embedded-opentype'),
-		url('iconfont.woff2?1624595061386') format('woff2'),
-		url('iconfont.woff?1624595061386') format('woff'),
-		url('iconfont.ttf?1624595061386') format('truetype');
+	src: url('iconfont.eot?1624672366892');
+	src: url('iconfont.eot?#iefix-1624672366892') format('embedded-opentype'),
+		url('iconfont.woff2?1624672366892') format('woff2'),
+		url('iconfont.woff?1624672366892') format('woff'),
+		url('iconfont.ttf?1624672366892') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,52 +40,56 @@ Glyphs list
 			content: '\ea02';
 		}
 
-		 .iconfont-checked:before {
+		 .iconfont-chart:before {
 			content: '\ea03';
 		}
 
-		 .iconfont-close2:before {
+		 .iconfont-checked:before {
 			content: '\ea04';
 		}
 
-		 .iconfont-comment:before {
+		 .iconfont-close2:before {
 			content: '\ea05';
 		}
 
-		 .iconfont-edit:before {
+		 .iconfont-comment:before {
 			content: '\ea06';
 		}
 
-		 .iconfont-lang:before {
+		 .iconfont-edit:before {
 			content: '\ea07';
 		}
 
-		 .iconfont-login:before {
+		 .iconfont-lang:before {
 			content: '\ea08';
 		}
 
-		 .iconfont-mail:before {
+		 .iconfont-login:before {
 			content: '\ea09';
 		}
 
-		 .iconfont-Minus:before {
+		 .iconfont-mail:before {
 			content: '\ea0a';
 		}
 
-		 .iconfont-phone:before {
+		 .iconfont-Minus:before {
 			content: '\ea0b';
 		}
 
-		 .iconfont-phone2:before {
+		 .iconfont-phone:before {
 			content: '\ea0c';
 		}
 
-		 .iconfont-Plus:before {
+		 .iconfont-phone2:before {
 			content: '\ea0d';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-Plus:before {
 			content: '\ea0e';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea0f';
 		}
 
 		

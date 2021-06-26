@@ -541,3 +541,29 @@ input {
         }
     }
 }
+
+.collapse-line{
+    border-top: 1px solid #D4D4D4;
+    padding: 20px 0;
+    &>a{
+        position: relative;
+        padding-right: 30px;
+        display: block;
+        &::before{
+            content: "";
+            border: solid #000;
+            border-width: 0px 1px 1px 0px;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            transform: rotate(45deg);transition: 0.2s all;
+        }
+    }
+    [aria-expanded="true"]{
+        &::before{
+            transform: rotate( -135deg);top: 9px;
+        }
+    }
+}
