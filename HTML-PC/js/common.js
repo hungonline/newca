@@ -150,9 +150,10 @@
               clickable: true,
             },
         });
-        var swiperService = new Swiper(".list-service .swiper-container", {
-            slidesPerView: 1.5,
-            spaceBetween: 16,
+        var swiperService = new Swiper("#list-service_grid4 .swiper-container", {
+            slidesPerView: 4,
+            spaceBetween: 24,
+            simulateTouch: false,
             navigation: {
                 nextEl: ".swiper-service-next",
                 prevEl: ".swiper-service-prev",
@@ -161,6 +162,49 @@
               el: ".swiper-pagination",
               clickable: true,
             },
+            breakpoints: {
+                991: {
+                  slidesPerView: 3,
+                },
+                767: {
+                    slidesPerView: 2,
+                },
+                414: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 16,
+                }
+            }
+        });
+        var swiperService2 = new Swiper("#list-service_grid5 .swiper-container", {
+            slidesPerView: 5,
+            spaceBetween: 1,
+            simulateTouch: false,
+            navigation: {
+                nextEl: ".swiper-service-next",
+                prevEl: ".swiper-service-prev",
+              },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+                1199: {
+                  slidesPerView: 4,
+                  spaceBetween: 24,
+                },
+                991: {
+                  slidesPerView: 3,
+                  spaceBetween: 24,
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                414: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 16,
+                }
+            }
         });
     }
 
