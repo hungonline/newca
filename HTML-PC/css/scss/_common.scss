@@ -244,8 +244,8 @@ input {
 }
 
 [class*='grid__'] {
-    column-gap: 16px;
-    row-gap: 16px;
+    column-gap: 24px;
+    row-gap: 24px;
     position: relative;
 
     .art_item {
@@ -256,7 +256,7 @@ input {
 .grid {
     display: grid;
     width: 100%;
-
+    position: relative;
     &__1 {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -287,12 +287,6 @@ input {
         grid-template-columns: repeat(7, 1fr);
         column-gap: 8px;
         row-gap: 8px;
-    }
-
-    @media (max-width: 1025px) {
-        &__5 {
-            grid-template-columns: repeat(4, 1fr);
-        }
     }
 }
 .tooltip{
@@ -333,7 +327,19 @@ input {
         max-width: 20%;
     }
 }
-
+.bg-padding{
+    background: #F2F2F5;
+    padding: 80px 0;
+}
+.padding_16{
+    padding: 16px;
+}
+.padding_30{
+    padding: 30px;
+}
+.padding_80{
+    padding: 80px 0;
+}
 .social-btn {
     display: flex;
 
@@ -385,6 +391,11 @@ input {
     &.yellow {
         background: #FFDC52;
         border: 1px solid #FFDC52;
+        &:hover{
+            background: #ffc107;
+            border: 1px solid #ffc107;
+            color: #1C1C28;
+        }
     }
 
     &.txt_black {
@@ -421,7 +432,9 @@ input {
         cursor: pointer;
     }
 }
-
+.color-orange{
+    color: #E53535;
+}
 .color-gray {
     color: #555770
 }
@@ -543,14 +556,19 @@ input {
 }
 
 .collapse-line{
-    border-top: 1px solid #D4D4D4;
-    padding: 20px 0;
+    padding: 20px 24px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 16px;
     &>a{
         position: relative;
         padding-right: 30px;
         display: block;
+        font-size: 16px;
+        font-weight: bold;
         &::before{
             content: "";
+            opacity: 0.5;
             border: solid #000;
             border-width: 0px 1px 1px 0px;
             width: 8px;
@@ -561,9 +579,45 @@ input {
             transform: rotate(45deg);transition: 0.2s all;
         }
     }
+    .card-body{
+        padding: 1.25rem 0 0 0;
+    }
     [aria-expanded="true"]{
         &::before{
             transform: rotate( -135deg);top: 9px;
+            opacity: 1
+        }
+    }
+}
+
+.breadcrumb{
+    background-color:#F2F2F5;
+    margin-bottom: 0;
+    padding: .75rem 0;
+    .breadcrumb-item{
+        &+.breadcrumb-item{
+            padding-left: 30px;
+            position: relative;
+            &::before{
+                content: "";
+                border-top: 1px solid #6c757d;
+                border-right: 1px solid #6c757d;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                transform: rotate(
+            45deg
+            );
+                padding: 0;
+                left: 10px;
+                top: 7px;
+            }
+        }
+        a{
+            color: #555770;
+        }
+        &.active{
+            color: #000;
         }
     }
 }

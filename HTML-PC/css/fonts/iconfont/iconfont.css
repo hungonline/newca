@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1624672366892');
-	src: url('iconfont.eot?#iefix-1624672366892') format('embedded-opentype'),
-		url('iconfont.woff2?1624672366892') format('woff2'),
-		url('iconfont.woff?1624672366892') format('woff'),
-		url('iconfont.ttf?1624672366892') format('truetype');
+	src: url('iconfont.eot?1624715717287');
+	src: url('iconfont.eot?#iefix-1624715717287') format('embedded-opentype'),
+		url('iconfont.woff2?1624715717287') format('woff2'),
+		url('iconfont.woff?1624715717287') format('woff'),
+		url('iconfont.ttf?1624715717287') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,60 +36,72 @@ Glyphs list
 			content: '\ea01';
 		}
 
-		 .iconfont-cart:before {
+		 .iconfont-address:before {
 			content: '\ea02';
 		}
 
-		 .iconfont-chart:before {
+		 .iconfont-box:before {
 			content: '\ea03';
 		}
 
-		 .iconfont-checked:before {
+		 .iconfont-cart:before {
 			content: '\ea04';
 		}
 
-		 .iconfont-close2:before {
+		 .iconfont-chart:before {
 			content: '\ea05';
 		}
 
-		 .iconfont-comment:before {
+		 .iconfont-checked:before {
 			content: '\ea06';
 		}
 
-		 .iconfont-edit:before {
+		 .iconfont-close2:before {
 			content: '\ea07';
 		}
 
-		 .iconfont-lang:before {
+		 .iconfont-comment:before {
 			content: '\ea08';
 		}
 
-		 .iconfont-login:before {
+		 .iconfont-edit:before {
 			content: '\ea09';
 		}
 
-		 .iconfont-mail:before {
+		 .iconfont-lang:before {
 			content: '\ea0a';
 		}
 
-		 .iconfont-Minus:before {
+		 .iconfont-login:before {
 			content: '\ea0b';
 		}
 
-		 .iconfont-phone:before {
+		 .iconfont-mail:before {
 			content: '\ea0c';
 		}
 
-		 .iconfont-phone2:before {
+		 .iconfont-Minus:before {
 			content: '\ea0d';
 		}
 
-		 .iconfont-Plus:before {
+		 .iconfont-phone:before {
 			content: '\ea0e';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-phone2:before {
 			content: '\ea0f';
+		}
+
+		 .iconfont-Plus:before {
+			content: '\ea10';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea11';
+		}
+
+		 .iconfont-shiping:before {
+			content: '\ea12';
 		}
 
 		

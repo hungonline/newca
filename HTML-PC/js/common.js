@@ -150,6 +150,7 @@
               clickable: true,
             },
         });
+        
         var swiperService = new Swiper("#list-service_grid4 .swiper-container", {
             slidesPerView: 4,
             spaceBetween: 24,
@@ -206,6 +207,42 @@
                 }
             }
         });
+
+        var swiperService3 = new Swiper("#list-service_grid3 .swiper-container", {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            simulateTouch: false,
+            navigation: {
+                nextEl: ".swiper-service-next",
+                prevEl: ".swiper-service-prev",
+              },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+                991: {
+                  slidesPerView: 3,
+                },
+                767: {
+                    slidesPerView: 2,
+                },
+                414: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 16,
+                }
+            }
+        });
+
+        var swiperRating = new Swiper(".service-rating .swiper-container", {
+            slidesPerView: 1.3,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: ".swiper-rating-next",
+                prevEl: ".swiper-rating-prev",
+            }
+        });
+
     }
 
     $(function () {
