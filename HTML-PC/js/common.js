@@ -139,7 +139,7 @@
             },
         });
         var swiperWhy = new Swiper(".box-why-choose .swiper-container", {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 16,
             navigation: {
                 nextEl: ".swiper-why-next",
@@ -171,7 +171,7 @@
                     slidesPerView: 2,
                 },
                 414: {
-                    slidesPerView: 1.3,
+                    slidesPerView: 1,
                     spaceBetween: 16,
                 }
             }
@@ -202,7 +202,7 @@
                     spaceBetween: 24,
                 },
                 414: {
-                    slidesPerView: 1.3,
+                    slidesPerView: 1,
                     spaceBetween: 16,
                 }
             }
@@ -228,7 +228,7 @@
                     slidesPerView: 2,
                 },
                 414: {
-                    slidesPerView: 1.3,
+                    slidesPerView: 1,
                     spaceBetween: 16,
                 }
             }
