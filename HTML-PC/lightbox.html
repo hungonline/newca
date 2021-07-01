@@ -10,7 +10,8 @@
     <meta name="description" content="content">
     <meta name="keywords" content="Việt Nam">
     <title>
-        <!-- build:title -->
+        Light box
+
     </title>
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
         rel="shortcut icon" />
@@ -26,7 +27,28 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
-    <!-- build:script2 -->
+    
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/daterangepicker.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.count').prop('disabled', true);
+        $(document).on('click', '.plus', function () {
+            $('.count').val(parseInt($('.count').val()) + 1);
+        });
+        $(document).on('click', '.minus', function () {
+            $('.count').val(parseInt($('.count').val()) - 1);
+            if ($('.count').val() == 0) {
+                $('.count').val(1);
+            }
+        });
+        $('input[name="daterange"]').daterangepicker({
+            linkedCalendars: false,
+            opens: 'left'
+        });
+    });
+</script>
+
 
     <!-- build:head2 -->
     <!-- build:head -->
@@ -208,7 +230,39 @@
 
     </section>
 
-    <!-- build:content -->
+    
+<div class="clearfix" style="margin: 100px 0">
+    <div class="container">
+        <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Thông tư 200</button></p>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog2">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Thông tư 200</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body detail_tin">
+                        <p>Áp dụng thông tư 200/2014/TT-BTC</p>
+                        <div>Bắt buộc đối với Doanh nghiệp lớn thoả mãn 2 điều kiện:</div>
+                        <ul>
+                            <Li>Có vốn đăng ký trên 10 tỷ đồng</Li>
+                            <li>Có số lao động trung bình hàng năm trên 300 người</li>
+                        </ul>
+                        <p>Phần mềm kế toán EasyBooks không chịu thuế VAT</p>
+                        <p>Quý khách sử dụng gói 2 năm trở lên sẽ có báo giá ưu đãi hấp dẫn riêng</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="overlay"></div>
     <!--Footer-->
     <footer class="footer">
