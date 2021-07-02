@@ -709,8 +709,9 @@ input {
 
             button {
                 padding: 0 5px;
-                margin-top: 4px;
                 outline: 0;
+                background: none;
+                height: 38px;
 
                 &:focus {
                     box-shadow: none
