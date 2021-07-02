@@ -2,25 +2,144 @@
 .detail_tin {
     position: relative;
     color: rgba(0, 0, 0, .85);
+
     .title-detail {
         font-size: 24px;
         font-weight: bold;
         margin: 0 0 15px 0;
         position: relative;
+    }
 
-        &::before {
-            content: "";
-            background: url(images/icons/bg-title.png) no-repeat;
-            background-size: contain;
-            width: 93px;
-            height: 103px;
-            position: absolute;
-            top: -30px;
-            left: -30px;
-            opacity: 0.4;
-            z-index: -1;
+    //Custom
+
+    .description {
+        color: #555770;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .goi-dk {
+        .flex {
+            a {
+                border: 1px solid #E4E4EB;
+                border-radius: 6px;
+                display: inline-block;
+                line-height: 32px;
+                color: #555770;
+                padding: 0 10px;
+                margin: 0 4px 8px 0;
+
+                &.active {
+                    background: #750E6C;
+                    border: 1px solid #750E6C;
+                    color: #fff
+                }
+            }
         }
     }
+
+    .price-all {
+        display: flex;
+        color: #000;
+
+        .all {
+            font-size: 32px;
+            font-weight: bold;
+
+            span {
+                font-weight: 400;
+                border-bottom: 1px solid;
+                line-height: 1;
+                display: inline-block;
+            }
+        }
+
+        .note {
+            margin-left: 20px;
+            margin-top: 14px;
+            color: #555770;
+        }
+    }
+
+    .view-detail-service {
+        padding: 0;
+        border: 0;
+
+        &>a {
+            color: #0063F7;
+            font-size: 16px;
+            font-weight: 400;
+            display: inline-block;
+
+            &::before {
+                border: solid #0063F7;
+                border-width: 0px 1px 1px 0px;
+                width: 10px;
+                height: 10px;
+                opacity: 1;
+            }
+        }
+    }
+
+    .btn-bottom {
+        .ct_quantity {
+            margin-right: 16px;
+            margin-bottom: 10px;
+        }
+
+        .btn-default {
+            margin-left: 8px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .bundled-products {
+        .itemt {
+            border: 1px solid #E4E4EB;
+            background: #FAFAFC;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 16px;
+
+            .flex-btn {
+                font-size: 14px;
+                margin-top: 16px;
+                align-items: center;
+
+                .btn {
+                    background: #750E6C;
+                    border-radius: 6px;
+                    border: 1px solid #750E6C;
+                    line-height: 34px;
+                    display: inline-block;
+                    padding: 0 20px;
+                    color: #fff;
+                    font-size: 14px;
+                }
+
+                .view {
+                    color: #750E6C;
+                    padding: 0 20px;
+                    line-height: 34px;
+                }
+
+                .disable {
+                    background: #E4E4EB;
+                    border: 1px solid #E4E4EB;
+                    color: #8F90A6;
+                    cursor: no-drop;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    //End Custom
+
 
     .date {
         color: #565656;
@@ -162,14 +281,16 @@
         text-transform: uppercase;
     }
 
-    .social{
+    .social {
         align-items: center;
         color: rgba(0, 0, 0, 0.45);
         font-size: 16px;
-        span{
+
+        span {
             margin-right: 6px;
         }
-        a{
+
+        a {
             width: 38px;
             height: 38px;
             border: 1px solid rgba(0, 0, 0, 0.06);
@@ -180,7 +301,8 @@
             align-items: center;
             justify-content: center;
             padding-right: 2px;
-            &:hover{
+
+            &:hover {
                 background: var(--colormain);
                 border: 1px solid var(--colormain);
                 color: #fff;
