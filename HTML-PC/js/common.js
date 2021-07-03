@@ -95,6 +95,16 @@
             $(this).next('.level2').slideToggle("slow", function () {});
         });
 
+        $('.confir_res input[type="checkbox"]').bind('change', function (v) {
+
+            if($(this).is(':checked')) {
+                $(this).parent().addClass('active');
+            } else {
+                $(this).parent().removeClass('active');
+            }
+        });
+
+
         // Minus and Plus
         var quantitiy = 0;
         $('.quantity-right-plus').click(function (e) {

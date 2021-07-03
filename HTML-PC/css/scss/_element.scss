@@ -213,7 +213,7 @@
     row-gap: 24px;
 
     .swiper-container {
-        padding: 40px 15px 30px 15px;
+        padding: 28px 15px 30px 15px;
         margin: -10px -15px -30px -15px;
 
         .swiper-button-prev,
@@ -357,7 +357,11 @@
                 text-transform: uppercase;
                 margin-bottom: 10px;
             }
-
+            .des__2{
+                text-transform: inherit;
+                font-size: 12px;
+                height: 52px;
+            }
             .price {
                 .price-down {
                     color: #E53535;
@@ -418,7 +422,7 @@
 
     @media (max-width: 991px) {
         .swiper-container {
-
+            margin: -20px -15px -30px -15px;
             .swiper-button-prev,
             .swiper-button-next {
                 display: block;
@@ -1530,38 +1534,37 @@
         }
     }
 
-    @media (max-width: 991px) {
-        table {
-
-            th,
-            td {
-                white-space: nowrap;
-
-                &:first-child {
-                    white-space: pre-wrap;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 767px) {
-        .btn-default {
-            font-size: 12px;
-            padding: 0 15px;
-            line-height: 32px;
-        }
-
+    @media (max-width: 1199px) {
         table {
             th {
                 div {
                     font-size: 11px;
                 }
             }
-
             th,
             td {
+                white-space: nowrap;
                 font-size: 13px;
                 padding: .75rem 5px;
+                &:first-child {
+                    white-space: pre-wrap;
+                }
+            }
+        }
+        .btn-default {
+            font-size: 12px;
+            padding: 0 15px;
+            line-height: 32px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        table {
+            th,
+            td {
+                &:first-child {
+                    white-space: nowrap;
+                }
             }
         }
     }
@@ -2073,7 +2076,7 @@
                     background: rgba(255, 255, 255, 0.85);
                     padding: 6px 16px 6px 40px;
                     margin-bottom: 12px;
-
+                    max-width: 530px;
                     .flex {
                         justify-content: space-between;
                     }
@@ -2105,6 +2108,12 @@
                 line-height: 1;
                 display: inline-block;
             }
+        }
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+        @media (max-width: 575px) {
+            margin-top: 20px;
         }
     }
 
