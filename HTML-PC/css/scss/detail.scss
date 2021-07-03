@@ -8,6 +8,14 @@
         font-weight: bold;
         margin: 0 0 15px 0;
         position: relative;
+        color: #1C1C28;
+    }
+    .title_detail {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 24px 0;
+        position: relative;
+        color: #1C1C28;
     }
 
     //Custom
@@ -59,6 +67,8 @@
             margin-left: 20px;
             margin-top: 14px;
             color: #555770;
+            cursor: pointer;
+            position: relative;
         }
     }
 
@@ -204,8 +214,8 @@
 
     p.lead {
         font-weight: bold;
-        font-size: 16px;
-
+        font-size: 18px;
+        color: #1C1C28;
         .slogan {
             background: #303030;
             color: #fff;
@@ -249,9 +259,8 @@
     // }
 
     p {
-        line-height: 1.4;
+        line-height: 1.5;
         margin-bottom: 15px;
-        text-align: justify;
 
         img {
             max-width: 100%;
@@ -321,10 +330,6 @@
         }
     }
 
-    .author {
-        color: #283B4F;
-    }
-
     .share_face {
         background: #507BCA;
         border-radius: 3px;
@@ -359,7 +364,12 @@
             }
         }
     }
-
+    &__v2{
+        p{
+            font-size: 18px;
+            color: #1C1C28;
+        }
+    }
     @media (max-width:1025px) {
         .title_detail {
             font-size: 25px

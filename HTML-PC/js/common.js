@@ -103,7 +103,19 @@
                 $(this).parent().removeClass('active');
             }
         });
-
+        
+        $(".tab-default a").click(function (event) {
+            $(".tab-default a").removeClass("active")
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+            event.preventDefault();
+            var tab = $(this).attr("href");
+            $(".tab-content >div").not(tab).css("display", "none");
+            $(tab).fadeIn();
+        });
 
         // Minus and Plus
         var quantitiy = 0;
