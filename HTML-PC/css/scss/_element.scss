@@ -2119,7 +2119,15 @@
             margin-top: 20px;
         }
     }
-
+    .form-thongtin{
+        max-width:588px;
+        .row{
+            margin:0 -4px
+        }
+        [class*="col-"]{
+            padding: 0 4px;
+        }
+    }
 
     @media (max-width: 991px) {
         &__left {
@@ -2595,6 +2603,7 @@
         }
     }
     @media (max-width: 767px){
+        padding-top: 20px;
         .list-cart{
             .itemt{
                 padding: 10px 10px 5px 10px;
@@ -2620,5 +2629,50 @@
         position: absolute;
         top: 11px;
         right: 15px;
+    }
+}
+.box-success-pay{
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px;
+    width: 728px;
+    max-width: 100%;
+    margin: 0 auto;
+    .title{
+        text-align: center;
+        color: #05A660;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom: 1px solid #E4E4EB;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        img{
+            margin-right: 10px;
+        }
+    }
+    .content{
+        font-size: 16px;
+        color: #4F064B;
+        &__v2{
+            color: #1C1C28;
+        }
+        .row{
+            p{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        padding: 15px;
+        .title{
+            font-size: 18px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+            }
+        }
     }
 }

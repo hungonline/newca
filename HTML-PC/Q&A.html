@@ -78,7 +78,7 @@
                 <span>VI</span>
             </a>
             <div class="my_user">
-                <a href="login">
+                <a href="javascript:;" data-toggle="modal" data-target="#popuplogin">
                     <svg class="icon-svg">
                         <use xlink:href="images/icons/icon.svg#login"></use>
                     </svg>
@@ -564,6 +564,33 @@
         </div>
     </footer>
     <!--End Footer-->
+
+    <!-- Popup Đăng nhập -->
+    <div class="modal modal-login fade" id="popuplogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Đăng nhập</h4>
+                    <p>Vòng lòng đăng nhập bằng Gmail</p>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body detail_tin">
+                    <div class="form-group relative">
+                        <img class="icon" src="images/icons/google.svg" alt="">
+                        <input type="text" class="form-control login" id="" placeholder="Đăng nhập với Gmail">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
     <div class="overlay-bg"></div>
     <!--Back to top-->

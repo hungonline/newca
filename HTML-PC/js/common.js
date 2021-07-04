@@ -96,7 +96,14 @@
         });
 
         $('.confir_res input[type="checkbox"]').bind('change', function (v) {
-
+            if($(this).is(':checked')) {
+                $(this).parent().addClass('active');
+            } else {
+                $(this).parent().removeClass('active');
+            }
+        });
+        $('.confir_res input[type="radio"]').bind('change', function (v) {
+            $('.confir_res').removeClass('active');
             if($(this).is(':checked')) {
                 $(this).parent().addClass('active');
             } else {

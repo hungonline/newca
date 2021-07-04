@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="content">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Thanh toán
+
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/range-holder.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+
+
+
+    <!-- build:head2 -->
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+    <section class="top-header padding_insert">
+        <div class="left">
+            <a href="#">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#phone"></use>
+                </svg>
+                Tổng đài: <b>1900 2066</b>
+            </a>
+            <span>|</span>
+            <a href="#">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#mail"></use>
+                </svg>
+                Email: <b>info@newca.vn</b>
+            </a>
+        </div>
+        <div class="right">
+            <div class="search-btn">
+                <a href="javarscript:;" class="auto_search_button">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                    <svg class="icon-svg close">
+                        <use xlink:href="images/icons/icon.svg#close2"></use>
+                    </svg>
+                </a>
+                <div class="search-wrap" style="display: none;">
+                    <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
+                    <button type="submit" value="">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <a href="#" class="languages">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#lang"></use>
+                </svg>
+                <span>VI</span>
+            </a>
+            <div class="my_user">
+                <a href="login">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#login"></use>
+                    </svg>
+                    <span>Đăng nhập</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="navbar" class="topnav padding_insert step-pay">
+        <div class="flex flex_row">
+            <h1 class="logo" title="new-ca">
+                <a href="#"><img src="images/graphics/logo.png" alt=""></a>
+            </h1>
+            <div class="title-page">Thanh toán</div>
+            <div class="step-pay__step">
+                <div class="itemt active success">
+                    <div class="text">
+                        <div class="number">1</div>
+                        <div class="sp">Giỏ hàng</div>
+                    </div>
+                </div>
+                <div class="itemt active">
+                    <div class="text">
+                        <div class="number">2</div>
+                        <div class="sp">Thông tin nhận hàng</div>
+                    </div>
+                </div>
+                <div class="itemt">
+                    <div class="text">
+                        <div class="number">3</div>
+                        <div class="sp">Hoàn thành</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="bg-agray page-pay clearfix">
+        <div class="container mb80">
+            <div class="business-registration flex mb40">
+                <div class="business-registration__left mb30">
+                    <h2 class="bold txt_24 mb24">
+                        1. Thông tin nhận hàng
+                    </h2>
+                    <div class="form-thongtin">
+                        <div class="form-default form-default__v2 mb40">
+                            <div class="form-group" style="max-width:385px">
+                                <label class="lbl">Họ và tên</label>
+                                <input type="text" class="form-control icon" id="" value="Vũ Ngọc Sơn">
+                            </div>
+                            <div class="form-group" style="max-width:385px">
+                                <label class="lbl">Email</label>
+                                <input type="text" class="form-control icon" id="" value="thienkhoiart@gmail.com">
+                            </div>
+                            <div class="form-group" style="max-width:385px">
+                                <label class="lbl">SĐT</label>
+                                <input type="text" class="form-control icon" id="" value="038 7301 078">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="lbl">Tỉnh / thành</label>
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option selected>Hà Nội</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="lbl">Quận / huyện</label>
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option selected>Quận Cầu Giấy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="lbl">Địa chỉ</label>
+                                <input type="text" class="form-control icon" id="" value="Tòa nhà Charmvit, 114 Trần Duy Hưng, Cầu Giấy, Hà Nội">
+                            </div>
+                            <div class="form-group">
+                                <label class="lbl">Ghi chú</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 150px;" placeholder="Viết bình luận của bạn..."></textarea>
+                            </div>
+
+                            
+                        </div>
+                        <h2 class="bold txt_24 mb24">
+                            2. Chọn phương thức thanh toán
+                        </h2>
+                        <div class="radio-checklist">
+                            <label class="confir_res active" for="inlineRadio1">
+                                <input class="checkbox" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="">
+                                <span class="checkmark"></span>
+                                Thanh toán khi nhận hàng (COD)
+                            </label>
+                            <label class="confir_res" for="inlineRadio2">
+                                <input class="checkbox" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <span class="checkmark"></span>
+                                Thanh toán bằng thẻ quốc tế Visa, Master, JCB
+                            </label>
+                            <label class="confir_res" for="inlineRadio3">
+                                <input class="checkbox" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <span class="checkmark"></span>
+                                Thẻ ATM nội địa/Internet Banking
+                            </label>
+                            <label class="confir_res" for="inlineRadio4">
+                                <input class="checkbox" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                <span class="checkmark"></span>
+                                Thanh toán bằng ví điện tử (Airpay/ VNpay/ MoMo/Zalopay/...)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="business-registration__right">
+                    <div class="bg-white mb16 padding_30 radius_6 info-business">
+                        <h2 class="bold txt_24 mb16">Thông tin đơn hàng</h2>
+                        <div class="border-bottom mb16"></div>
+                        <div class="row mb10">
+                            <div class="col-7 color-gray">
+                                2 sản phẩm
+                            </div>
+                            <div class="col-5 txt_16 text-right bold">
+                                5,450,000 <u>đ</u>
+                            </div>
+                        </div>
+                        <div class="row mb10">
+                            <div class="col-7 color-gray">
+                                Chi phí vận chuyển
+                            </div>
+                            <div class="col-5 txt_16 text-right bold">
+                                50,000 <u>đ</u>
+                            </div>
+                        </div>
+                        <div class="border-bottom mb16"></div>
+                        <div class="row mb10">
+                            <div class="col-7 color-gray">
+                                Tạm tính
+                            </div>
+                            <div class="col-5 txt_16 text-right bold">
+                                5,450,000 <u>đ</u>
+                            </div>
+                        </div>
+                        <div class="row mb16">
+                            <div class="col-7 color-gray">
+                                Ước tính chi phí vận chuyển
+                            </div>
+                            <div class="col-5 txt_16 text-right bold">
+                                50,000 <u>đ</u>
+                            </div>
+                        </div>
+                        <div class="border-bottom mb16"></div>
+                        <div class="form-group classcode-voucher mb24">
+                            <input type="text" class="form-control icon" id="" placeholder="Mã giảm giá">
+                            <a class="apply" href="#">Áp dụng </a>
+                        </div>
+                        <div class="row mb16 txt_16">
+                            <div class="col-6 color-gray">
+                                <b>Tổng chi phí</b>
+                            </div>
+                            <div class="col-6 text-right">
+                                <div class="txt_20 bold" style="color: #FF3B3B;">
+                                    5,455.000 <u>đ</u>
+                                </div>
+                                <i class="txt_12">(Đã bao gồm VAT nếu có)</i>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-default yellow full txt_black">Đặt mua</a>
+                        <div class="txt_12 mt5 text-right" style="color: #FF3B3B;">*(Xin vui lòng kiểm tra lại đơn hàng trước khi Đặt Mua)</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom mb16"></div>
+            <div class="txt_20 bold mb10">An tâm khi mua sắm tại NewCA</div>
+            <div class="chinh-sach padding_24 bg-white radius_6 ">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 mb10">
+                        <div class="icon">
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#shiping2"></use>
+                            </svg>
+                        </div>
+                        <h3>Miễn phí vận chuyển</h3>
+                        Miễn phí vận chuyển các đơn nội thành từ 300K
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb10">
+                        <div class="icon">
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#comment"></use>
+                            </svg>
+                        </div>
+                        <h3>Hỗ trợ 24/7</h3>
+                        Đổi trả và hoàn tiền trong vòng 5 ngày. 
+                        Với bất kỳ sản phẩm lỗi, không đúng
+                        mô tả
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb10">
+                        <div class="icon">
+                            <svg class="icon-svg" style="width:40px;height:40px">
+                                <use xlink:href="images/icons/icon.svg#chinh-hang"></use>
+                            </svg>
+                        </div>
+                        <h3>Sản phẩm chính hãng</h3>
+                        Bảo đảm sản phẩm chính hãng 100%
+                        Hoàn tiền 150% nếu phát hiện hàng giả
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb10">
+                        <div class="icon">
+                            <svg class="icon-svg" style="width:40px;height:40px">
+                                <use xlink:href="images/icons/icon.svg#bao-mat"></use>
+                            </svg>
+                        </div>
+                        <h3>Bảo mật thông tin</h3>
+                        100% thông tin cá nhân và giao dịch của bạn được bảo vệ an toàn
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="overlay"></div>
+    <!--Footer-->
+    <footer class="footer footer-pay">
+        <div class="copy_right">
+            <div class="container">
+                <div class="flex colum">
+                    <div>Copyright © NewCA. All rights reserved.</div>
+                    <div class="flex colum_2">
+                        <div class="chinh-sach"><a href="#">Chính sách</a> <span>|</span> <a href="#">Điều khoản</a>
+                        </div>
+                        <a href="#" class="languages">
+                            <i class="iconfont-lang"></i>
+                            <div><span class="active">VI</span>/EN</div>
+                        </a>
+                        <div class="social social-btn">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <div class="overlay-bg"></div>
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+        <i class="fa fa-long-arrow-up"></i>
+    </a>
+
+    <!--End Lightbox thông báo-->
+</body>
+
+</html>

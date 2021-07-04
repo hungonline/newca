@@ -16,3 +16,53 @@
 .modal-body{
     padding-top: 0;
 }
+.modal-content{
+    border: 0;
+}
+.modal-login{
+    .modal-dialog{
+        max-width: 392px;
+    }
+    .modal-header{
+        display: block;
+        padding-right: 50px;
+    }
+    .close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 45px;
+    }
+    .form-group{
+        .icon{
+            position: absolute;
+            top: 16px;
+            left: 50px;
+        }
+        .login{
+            background: #F2F2F5;
+            border: 0;
+            padding-left: 90px;
+        }
+        .form-control{
+            border-radius: 6px;
+            border: 1px solid #E4E4EB;
+            height: 56px;
+            font-size: 14px;
+            transition: 0.2s all;
+            &:focus{
+                border: 1px solid var(--colormain);
+            }
+        }
+    }
+    .btn{
+        height: 56px;
+        &.full{
+            width: 100%;
+        }
+        &:hover{
+            background: var(--colormain);
+            color: #fff;
+        }
+    }
+}
