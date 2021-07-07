@@ -308,6 +308,26 @@
                         font-weight: bold
                     }
                 }
+                &.default{
+                    position: relative;
+                    .level2{
+                        min-width: 200px;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+                        a{
+                            display: block;
+                            padding: 10px;
+                            border-bottom: 1px solid #dfdfdf;
+                        }
+                        @media (max-width: 991px) {
+                            box-shadow: none;
+                            padding-left: 25px;
+                            padding-bottom: 5px;
+                            a{
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -410,7 +430,6 @@
         @media (max-width: 991px) {
             .level2 {
                 display: none;
-
                 [class*='grid__'] {
                     grid-template-columns: repeat(1, 1fr);
                     padding: 5px 1px 15px 15px;
