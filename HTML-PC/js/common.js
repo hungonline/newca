@@ -265,7 +265,7 @@
         });
 
         var swiperRating = new Swiper(".service-rating .swiper-container", {
-            slidesPerView: 1.3,
+            slidesPerView: 1,
             spaceBetween: 24,
             navigation: {
                 nextEl: ".swiper-rating-next",
