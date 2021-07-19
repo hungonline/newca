@@ -1991,27 +1991,36 @@
         }
     }
 
+    // .swiper-button-prev,
+    // .swiper-button-next {
+    //     background: linear-gradient(270deg, #FFFFFF 6.77%, rgba(255, 255, 255, 0) 100%);
+    //     box-shadow: none;
+    //     border: 0;
+    //     font-size: 30px;
+    //     top: 0;
+    //     bottom: 0;
+    //     margin-top: 0;
+    //     height: 100%;
+    //     width: 160px;
+    //     border-radius: 0;
+
+    //     i {
+    //         position: absolute;
+    //         right: 0;
+    //         top: 50%;
+    //         margin-top: -15px;
+    //     }
+    // }
     .swiper-button-prev,
     .swiper-button-next {
-        background: linear-gradient(270deg, #FFFFFF 6.77%, rgba(255, 255, 255, 0) 100%);
+        background: none;
         box-shadow: none;
         border: 0;
         font-size: 30px;
-        top: 0;
         bottom: 0;
         margin-top: 0;
-        height: 100%;
-        width: 160px;
         border-radius: 0;
-
-        i {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            margin-top: -15px;
-        }
     }
-
     .swiper-button-prev {
         background: none;
         width: 30px;
