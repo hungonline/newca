@@ -164,7 +164,7 @@
                 prevEl: ".swiper-customer-prev",
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".box-customer .swiper-pagination",
                 clickable: true,
             },
         });
@@ -176,7 +176,7 @@
                 prevEl: ".swiper-why-prev",
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".box-why-choose .swiper-pagination",
                 clickable: true,
             },
         });
@@ -190,7 +190,7 @@
                 prevEl: ".swiper-service-prev",
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: "#list-service_grid4 .swiper-pagination",
                 clickable: true,
             },
             breakpoints: {
@@ -215,7 +215,7 @@
                 prevEl: ".swiper-service-prev",
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: "#list-service_grid5 .swiper-pagination",
                 clickable: true,
             },
             breakpoints: {
@@ -247,7 +247,7 @@
                 prevEl: ".swiper-service-prev",
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: "#list-service_grid3 .swiper-pagination",
                 clickable: true,
             },
             breakpoints: {

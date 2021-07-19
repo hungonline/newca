@@ -316,11 +316,11 @@
 }
 
 .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   display: inline-block;
   border-radius: 100%;
-  background: #bbbbbb;
+  background: #8F90A6;
   outline: 0;
 }
 
@@ -341,7 +341,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #666666;
+  background: #FFFFFF;
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
