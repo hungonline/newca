@@ -854,9 +854,12 @@ input {
         }
     }
     &.grid__2 {
+        column-gap:16px;
+        row-gap: 16px;
         .confir_res{
-            width: 100%;
+            width: 40%;
             height: 94px;
+            margin: 0;
         }
     }
     @media (max-width: 576px) {
