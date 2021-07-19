@@ -1763,7 +1763,15 @@
     .tab-detail {
         display: flex;
         justify-content: space-between;
-
+        position: sticky;
+        top: 60px;
+        background: #fff;
+        z-index: 12;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: -20px;
+        padding-left: 0;
         a {
             color: #555770;
             font-size: 16px;
@@ -1772,11 +1780,16 @@
             &:last-child {
                 margin-right: 0;
             }
-
-            &.active {
-                color: #1C1C28;
-                font-weight: bold;
-                border-bottom: 2px solid #1C1C28;
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 0;
+            &.active{
+                a{
+                    color: #1C1C28;
+                    font-weight: bold;
+                    border-bottom: 2px solid #1C1C28;
+                }
             }
         }
     }
@@ -1905,8 +1918,10 @@
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             padding-bottom: 15px;
-
-            a {
+            top: 50px;
+            margin-top: -10px;
+            li{
+                display: inline-block;
                 margin-right: 15px;
             }
         }
