@@ -102,14 +102,24 @@
                 $(this).parent().removeClass('active');
             }
         });
-        $('.confir_res input[type="radio"]').bind('change', function (v) {
-            $('.confir_res').removeClass('active');
+        $('.check-list_1 .confir_res input[type="radio"]').bind('change', function (v) {
+            $('.check-list_1 .confir_res').removeClass('active');
             if($(this).is(':checked')) {
                 $(this).parent().addClass('active');
             } else {
                 $(this).parent().removeClass('active');
             }
         });
+        $('.check-list_2 .confir_res input[type="radio"]').bind('change', function (v) {
+            $('.check-list_2 .confir_res').removeClass('active');
+            if($(this).is(':checked')) {
+                $(this).parent().addClass('active');
+            } else {
+                $(this).parent().removeClass('active');
+            }
+        });
+
+
         
         $(".tab-default a").click(function (event) {
             $(".tab-default a").removeClass("active")
