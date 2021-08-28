@@ -121,8 +121,10 @@
 
 
         
-        $(".tab-default a").click(function (event) {
-            $(".tab-default a").removeClass("active")
+        $(".tab-default >a").click(function (event) {
+            $(".tab-default >a").removeClass("active");
+            $(".menu2 .item").removeClass("active");
+            $('.sub-menu').fadeOut();
             if (!$(this).hasClass("active")) {
                 $(this).addClass("active");
             } else {
@@ -132,7 +134,39 @@
             var tab = $(this).attr("href");
             $(".tab-content >div").not(tab).css("display", "none");
             $(tab).fadeIn();
+
+            swiper();
         });
+
+        $('.menu2').find('.item').click(function () {
+            $(".tab-default a").removeClass("active");
+            $('.sub-menu').fadeIn();
+            $(this).addClass("active");
+            // if (!$(this).hasClass("active")) {
+            //     $(this).addClass("active");
+            //     $(this).next('.sub-menu').fadeIn();
+            // } else {
+            //     $(this).removeClass("active");
+            //     $(this).next('.sub-menu').fadeOut();
+            // }
+        });
+
+        $(".sub-menu a").click(function (event) {
+            $(".sub-menu a").removeClass("active");
+            $('.sub-menu').fadeOut();
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+            event.preventDefault();
+            var tab = $(this).attr("href");
+            $(".tab-content >div").not(tab).css("display", "none");
+            $(tab).fadeIn();
+
+            swiper();
+        });
+
 
         // Minus and Plus
         var quantitiy = 0;
@@ -167,6 +201,19 @@
 
     //slide Gallery
     function swiper() {
+
+        var swiperBanner = new Swiper(".top-banner .swiper-container", {
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-banner-next",
+                prevEl: ".swiper-banner-prev",
+            },
+            pagination: {
+                el: ".top-banner .swiper-pagination",
+                clickable: true,
+            },
+        });
+
         var swiperCustomer = new Swiper(".box-customer .swiper-container", {
             spaceBetween: 30,
             navigation: {
@@ -218,7 +265,7 @@
         });
         var swiperService2 = new Swiper("#list-service_grid5 .swiper-container", {
             slidesPerView: 5,
-            spaceBetween: 1,
+            spaceBetween: 2,
             simulateTouch: false,
             navigation: {
                 nextEl: ".swiper-service-next",

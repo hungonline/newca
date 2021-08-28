@@ -3,28 +3,47 @@
 <!-- build:content -->
 <section class="top-banner clearfix">
     <div class="container">
-        <div class="row">
-            <div class="content col-md-6">
-                <h2 class="title">
-                    Combo hóa đơn điện tử & chữ ký số chỉ với 540.000 đ
-                </h2>
-                <p>User onboarding is just the beginning. Empower your team to measure and improve product
-                    adoption—without a developer.</p>
-                <a href="#" class="btn-default yellow txt_black">Gọi để nhận ưu đãi ngay</a>
-                <div class="doi-tac">
-                    <p>Được tin tưởng bởi các đối tác hàng đầu:</p>
-                    <div class="grid grid__4">
-                        <div><img src="images/graphics/doi-tac1.png" alt=""></div>
-                        <div><img src="images/graphics/doi-tac2.png" alt=""></div>
-                        <div><img src="images/graphics/doi-tac3.png" alt=""></div>
-                        <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="content">
+                            <h2 class="title">
+                                Combo hóa đơn điện tử & chữ ký số chỉ với 540.000 đ
+                            </h2>
+                            <p>User onboarding is just the beginning. Empower your team to measure and improve product
+                                adoption—without a developer.</p>
+                            <a href="#" class="btn-default yellow txt_black">Gọi để nhận ưu đãi ngay</a>
+                        </div>
+                        <div class="img">
+                            <img src="images/graphics/banner2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="content">
+                            <h2 class="title">
+                                Combo hóa đơn điện tử & chữ ký số chỉ với 540.000 đ
+                            </h2>
+                            <p>User onboarding is just the beginning. Empower your team to measure and improve product
+                                adoption—without a developer.</p>
+                            <a href="#" class="btn-default yellow txt_black">Gọi để nhận ưu đãi ngay</a>
+                        </div>
+                        <div class="img">
+                            <img src="images/graphics/banner2.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="img col-md-6">
-                <img src="images/graphics/banner-tiki.jpg" alt="">
-            </div>
         </div>
+        <div class="swiper-button-next swiper-banner-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="swiper-button-prev swiper-banner-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
 
 </section>
@@ -75,7 +94,14 @@
                                 </div>
                                 <div>/ Chi phí 1 năm</div>
                             </div>
-                            <div class="ct_quantity">
+                            <div class="form-group">
+                                <select class="form-control" aria-label="Default select">
+                                    <option selected="">Gói 1 năm</option>
+                                    <option >Gói 2 năm</option>
+                                    <option >Gói 3 năm</option>
+                                </select>
+                            </div>  
+                            <!-- <div class="ct_quantity">
                                 <div class="input-group">
                                     <span class="input-group-btn">
                                         <button type="button" class="quantity-left-minus btn  btn-number"
@@ -97,7 +123,7 @@
                                     </span>
                                 </div>
                                 <div class="text">/ năm</div>
-                            </div>
+                            </div> -->
                             <a href="#" class="btn-default full mb24">Lựa chọn dịch vụ này</a>
                             <div class="service">
                                 <h3 class="title">Bao gồm</h3>
@@ -129,29 +155,13 @@
                                 </div>
                                 <div>/ Chi phí 1 năm</div>
                             </div>
-                            <div class="ct_quantity">
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn  btn-number"
-                                            data-type="minus" data-field="">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="images/icons/icon.svg#Minus"></use>
-                                            </svg>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number"
-                                        value="1" min="1" max="100">
-                                    <span class="input-group-btn up">
-                                        <button type="button" class="quantity-right-plus btn btn-number"
-                                            data-type="plus" data-field="">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="images/icons/icon.svg#Plus"></use>
-                                            </svg>
-                                        </button>
-                                    </span>
-                                </div>
-                                <div class="text">/ năm</div>
-                            </div>
+                            <div class="form-group">
+                                <select class="form-control" aria-label="Default select">
+                                    <option selected="">Gói 1 năm</option>
+                                    <option >Gói 2 năm</option>
+                                    <option >Gói 3 năm</option>
+                                </select>
+                            </div>  
                             <a href="#" class="btn-default yellow full mb24">Lựa chọn dịch vụ này</a>
                             <div class="service">
                                 <h3 class="title">Bao gồm</h3>
@@ -182,29 +192,13 @@
                                 </div>
                                 <div>/ Chi phí 1 năm</div>
                             </div>
-                            <div class="ct_quantity">
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn  btn-number"
-                                            data-type="minus" data-field="">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="images/icons/icon.svg#Minus"></use>
-                                            </svg>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number"
-                                        value="1" min="1" max="100">
-                                    <span class="input-group-btn up">
-                                        <button type="button" class="quantity-right-plus btn btn-number"
-                                            data-type="plus" data-field="">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="images/icons/icon.svg#Plus"></use>
-                                            </svg>
-                                        </button>
-                                    </span>
-                                </div>
-                                <div class="text">/ năm</div>
-                            </div>
+                            <div class="form-group">
+                                <select class="form-control" aria-label="Default select">
+                                    <option selected="">Gói 1 năm</option>
+                                    <option >Gói 2 năm</option>
+                                    <option >Gói 3 năm</option>
+                                </select>
+                            </div>  
                             <a href="#" class="btn-default full mb24">Lựa chọn dịch vụ này</a>
                             <div class="service">
                                 <h3 class="title">Bao gồm</h3>
@@ -232,6 +226,7 @@
                             </h3>
 
                             <p class="des">Ideal for startups and small </p>
+                            <div class="uu-viet">Sản phẩm ưu việt</div>
                             <div class="price">
                                 <div class="uppercase">Bắt đầu từ</div>
                                 <div class="all">
@@ -239,29 +234,14 @@
                                 </div>
                                 <div>/ Chi phí 1 năm</div>
                             </div>
-                            <div class="ct_quantity">
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn  btn-number"
-                                            data-type="minus" data-field="">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="images/icons/icon.svg#Minus"></use>
-                                            </svg>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number"
-                                        value="1" min="1" max="100">
-                                    <span class="input-group-btn up">
-                                        <button type="button" class="quantity-right-plus btn btn-number"
-                                            data-type="plus" data-field="">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="images/icons/icon.svg#Plus"></use>
-                                            </svg>
-                                        </button>
-                                    </span>
-                                </div>
-                                <div class="text">/ năm</div>
-                            </div>
+                            <div class="form-group">
+                                <select class="form-control" aria-label="Default select">
+                                    <option selected="">Gói 1 năm</option>
+                                    <option >Gói 2 năm</option>
+                                    <option >Gói 3 năm</option>
+                                </select>
+                            </div>   
+                            
                             <a href="#" class="btn-default full mb24">Lựa chọn dịch vụ này</a>
                             <div class="service">
                                 <h3 class="title">Bao gồm</h3>
@@ -305,263 +285,761 @@
             <a href="#dich-vu-dang-ky-kinh-doanh">Dịch vụ đăng ký kinh doanh</a>
             <a href="#dich-vu-ke-toan">Dịch vụ kế toán</a>
         </div>
-        <div id="hoa-don-dien-tu">
-            <div class="txt_24 mb16"><b>Hóa đơn điện tử</b></div>
-            <p class="txt_16 color-gray">Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử,
-                giao dịch</p>
-            <a href="#" class="btn-default min">Tìm hiểu thêm </a>
-            <div class="border-bottom mb24 mt24"></div>
-            <div class="color-main mb16"><b>1. ƯỚC TÍNH CHI PHÍ</b></div>
-            <div class="range-holder">
-                <div class="range-input">
-                    <span>Nhập số lượng hóa đơn</span>
-                    <input type="text" class="form-control icon" id="" value="0">
-                </div>
-                <div id="pr-slider" class="dragdealer">
-                    <div class="dragdealer-start">1</div>
-                    <div class="stripe">
-                        <div class="handle">
-                            <div class="infobox">
-                                <div class="titlebar"><span id="plan-holder">Chi
-                                        phí:</span> <span id="device-holder"></span>
+        <div class="tab-content">
+            <div id="hoa-don-dien-tu">
+                <div class="txt_24 mb16"><b>Hóa đơn điện tử</b></div>
+                <p class="txt_16 color-gray">Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử,
+                    giao dịch</p>
+                <a href="#" class="btn-default min">Tìm hiểu thêm </a>
+                <div class="border-bottom mb24 mt24"></div>
+                <div class="color-main mb16"><b>1. ƯỚC TÍNH CHI PHÍ</b></div>
+                <div class="range-holder">
+                    <div class="range-input">
+                        <span>Nhập số lượng hóa đơn</span>
+                        <input type="text" class="form-control icon" id="" value="0">
+                    </div>
+                    <div id="pr-slider" class="dragdealer">
+                        <div class="dragdealer-start">1</div>
+                        <div class="stripe">
+                            <div class="handle">
+                                <div class="infobox">
+                                    <div class="titlebar"><span id="plan-holder">Chi
+                                            phí:</span> <span id="device-holder"></span>
+                                    </div>
+                                    <div class="innerbox">
+                                        <div class="info-price"></div>
+                                    </div>
                                 </div>
-                                <div class="innerbox">
-                                    <div class="info-price"></div>
-                                </div>
+                                <div class="annual-price"></div>
+                                <div class="square"></div>
                             </div>
-                            <div class="annual-price"></div>
-                            <div class="square"></div>
+                        </div>
+                        <div class="dragdealer-end">
+                            &#62;95
                         </div>
                     </div>
-                    <div class="dragdealer-end">
-                        &#62;95
+                </div>
+                <div class="color-main mb24"><b>2. LỰA CHỌN NHÀ CUNG CẤP:</b></div>
+                <div id="list-service_grid5" class="list-service list-service__v2 mb16">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">CYBEROTUS CYBERBILL</h3>
+                                    <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
+                                    <div class="price">
+                                        <div class="price-down">Thấp nhấp</div>
+                                        <div class="all">
+                                            1.210.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="goi">
+                                        <div>Gói : <b>Cloud-300</b></div>
+                                        <span>|</span>
+                                        <div>Số lượng: <b>300</b></div>
+                                    </div>
+                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <h3 class="title">Chi phí bao gồm</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <a href="#" class="color-blue">Xem thêm thông tin</a>
+                                        <div class="border-bottom mb10 mt15"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                        <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt focus">
+                                    <div class="tag">Được nhiều người mua</div>
+                                    <h3 class="title">EFY</h3>
+                                    <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
+                                    <div class="price">
+                                        <div style="height: 18px;"></div>
+                                        <div class="all">
+                                            5.000.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="goi">
+                                        <div>Gói : <b>Cloud-300</b></div>
+                                        <span>|</span>
+                                        <div>Số lượng: <b>300</b></div>
+                                    </div>
+                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <h3 class="title">Chi phí bao gồm</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <a href="#" class="color-blue">Xem thêm thông tin</a>
+                                        <div class="border-bottom mb10 mt15"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                        <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">MYINVOICE</h3>
+                                    <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
+                                    <div class="price">
+                                        <div style="height: 18px;"></div>
+                                        <div class="all">
+                                            6.000.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="goi">
+                                        <div>Gói : <b>Cloud-300</b></div>
+                                        <span>|</span>
+                                        <div>Số lượng: <b>300</b></div>
+                                    </div>
+                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <h3 class="title">Chi phí bao gồm</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <a href="#" class="color-blue">Xem thêm thông tin</a>
+                                        <div class="border-bottom mb10 mt15"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                        <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">EASY</h3>
+                                    <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
+                                    <div class="price">
+                                        <div style="height: 18px;"></div>
+                                        <div class="all">
+                                            6.800.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="goi">
+                                        <div>Gói : <b>Cloud-300</b></div>
+                                        <span>|</span>
+                                        <div>Số lượng: <b>300</b></div>
+                                    </div>
+                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <h3 class="title">Chi phí bao gồm</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <a href="#" class="color-blue">Xem thêm thông tin</a>
+                                        <div class="border-bottom mb10 mt15"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                        <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">THÁI SƠN</h3>
+                                    <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
+                                    <div class="price">
+                                        <div style="height: 18px;"></div>
+                                        <div class="all">
+                                            7.200.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="goi">
+                                        <div>Gói : <b>Cloud-300</b></div>
+                                        <span>|</span>
+                                        <div>Số lượng: <b>300</b></div>
+                                    </div>
+                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <h3 class="title">Chi phí bao gồm</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                        </ul>
+                                        <a href="#" class="color-blue">Xem thêm thông tin</a>
+                                        <div class="border-bottom mb10 mt15"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
+                                        <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-service-next">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-prev swiper-service-prev">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <a href="#" class="btn-default min">Cần tư vấn? </a>
+            </div>
+            <div id="bao-hiem-xa-hoi-dien-tu" style="display: none;">
+                <div class="txt_24 mb16"><b>Bảo hiểm xã hội điện tử</b></div>
+                <p class="txt_16 color-gray">Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử, giao dịch</p>
+                <a href="#" class="btn-default min">Tìm hiểu thêm </a>
+                <div class="border-bottom mb24 mt24"></div>
+                <div class="color-main mb16"><b>1. ƯỚC TÍNH CHI PHÍ</b></div>
+                <div class="range-holder">
+                    <div class="range-input">
+                        <span>Nhập số lượng hóa đơn</span>
+                        <input type="text" class="form-control icon" id="" value="0">
+                    </div>
+                    <div id="pr-slider" class="dragdealer">
+                        <div class="dragdealer-start">1</div>
+                        <div class="stripe">
+                            <div class="handle">
+                                <div class="infobox">
+                                    <div class="titlebar"><span id="plan-holder">Chi
+                                            phí:</span> <span id="device-holder"></span>
+                                    </div>
+                                    <div class="innerbox">
+                                        <div class="info-price"></div>
+                                    </div>
+                                </div>
+                                <div class="annual-price"></div>
+                                <div class="square"></div>
+                            </div>
+                        </div>
+                        <div class="dragdealer-end">
+                            &#62;95
+                        </div>
+                    </div>
+                </div>
+                <div class="color-main mb24"><b>2. LỰA CHỌN NHÀ CUNG CẤP:</b></div>
+        
+                <div id="list-service_grid3" class="list-service mb16">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">CYBEROTUS CYBERBILL</h3>
+                                    <p class="des">Ideal for startups and small businesses</p>
+                                    <div class="price">
+                                        <div class="price-down color-orange">Thấp nhấp</div>
+                                        <div class="all">
+                                            4.500.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct_quantity">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus btn  btn-number"
+                                                    data-type="minus" data-field="">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="images/icons/icon.svg#Minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                            <input type="text" id="quantity" name="quantity" class="form-control input-number"
+                                                value="1" min="1" max="100">
+                                            <span class="input-group-btn up">
+                                                <button type="button" class="quantity-right-plus btn btn-number"
+                                                    data-type="plus" data-field="">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="images/icons/icon.svg#Plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="text">/ năm</div>
+                                    </div>
+                                    <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title text-left">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                            <li>Unlimited Insights</li>
+                                        </ul>
+                                        <div class="border-bottom mb24"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                        <div><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt focus">
+                                    <div class="tag">Lựa chọn hàng đầu</div>
+                                    <h3 class="title">EFY</h3>
+                                    <p class="des">Ideal for startups and small</p>
+                                    <div class="price">
+                                        <div class="price-down color-orange">&nbsp;</div>
+                                        <div class="all">
+                                            4.500.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct_quantity">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus btn  btn-number"
+                                                    data-type="minus" data-field="">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="images/icons/icon.svg#Minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                            <input type="text" id="quantity" name="quantity" class="form-control input-number"
+                                                value="1" min="1" max="100">
+                                            <span class="input-group-btn up">
+                                                <button type="button" class="quantity-right-plus btn btn-number"
+                                                    data-type="plus" data-field="">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="images/icons/icon.svg#Plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="text">/ năm</div>
+                                    </div>
+                                    <a href="#" class="btn-default yellow txt_black mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title text-left">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                            <li>Unlimited Insights</li>
+                                        </ul>
+                                        <div class="border-bottom mb24"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default yellow txt_black mb10">Lựa chọn dịch vụ này</a>
+                                        <div><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">CHO TỔ CHỨC, DOANH NGHIỆP</h3>
+                                    <p class="des">Ideal for teams at high-growth companies.</p>
+                                    <div class="price">
+                                        <div class="price-down color-orange">Thấp nhấp</div>
+                                        <div class="all">
+                                            4.500.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct_quantity">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus btn  btn-number"
+                                                    data-type="minus" data-field="">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="images/icons/icon.svg#Minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                            <input type="text" id="quantity" name="quantity" class="form-control input-number"
+                                                value="1" min="1" max="100">
+                                            <span class="input-group-btn up">
+                                                <button type="button" class="quantity-right-plus btn btn-number"
+                                                    data-type="plus" data-field="">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="images/icons/icon.svg#Plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="text">/ năm</div>
+                                    </div>
+                                    <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title text-left">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                            <li>Unlimited Insights</li>
+                                        </ul>
+                                        <div class="border-bottom mb24"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                        <div><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-service-next">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-prev swiper-service-prev">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="phan-mem-ke-toan" style="display: none;">
+                <div class="txt_24 mb16"><b>Phần mềm kế toán</b></div>
+                <p class="txt_16 color-gray">Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử, giao dịch</p>
+                <a href="#" class="btn-default min">Tìm hiểu thêm </a>
+                <div class="border-bottom mb24 mt24"></div>
+                <div id="list-service_grid3" class="list-service mb16">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">CYBEROTUS CYBERBILL</h3>
+                                    <p class="des">Ideal for startups and small businesses</p>
+                                    <div class="price">
+                                        <div class="all">
+                                            4.500.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title text-left">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                            <li>Unlimited Insights</li>
+                                        </ul>
+                                        <div class="border-bottom mb24"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                        <div><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt focus">
+                                    <div class="tag">Lựa chọn hàng đầu</div>
+                                    <h3 class="title">EFY</h3>
+                                    <p class="des">Ideal for startups and small</p>
+                                    <div class="price">
+                                        <div class="all">
+                                            4.500.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-default yellow txt_black mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title text-left">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                            <li>Unlimited Insights</li>
+                                        </ul>
+                                        <div class="border-bottom mb24"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default yellow txt_black mb10">Lựa chọn dịch vụ này</a>
+                                        <div><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemt">
+                                    <h3 class="title">CHO TỔ CHỨC, DOANH NGHIỆP</h3>
+                                    <p class="des">Ideal for teams at high-growth companies.</p>
+                                    <div class="price">
+                                        <div class="all">
+                                            4.500.000 <span>đ</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                    <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    <div class="service">
+                                        <h3 class="title text-left">Lợi ích</h3>
+                                        <ul class="check">
+                                            <li>3 user license</li>
+                                            <li>Standard pattern library, including NPS surveys</li>
+                                            <li>Unlimited Insights</li>
+                                        </ul>
+                                        <div class="border-bottom mb24"></div>
+                                        <div class="grid grid__3 mb24">
+                                            <div><img src="images/graphics/doi-tac2.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac3.png" alt=""></div>
+                                            <div><img src="images/graphics/doi-tac4.png" alt=""></div>
+                                        </div>
+                                        <a href="#" class="btn-default mb10">Lựa chọn dịch vụ này</a>
+                                        <div><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-service-next">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-prev swiper-service-prev">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="color-main mb24"><b>2. LỰA CHỌN NHÀ CUNG CẤP:</b></div>
-            <div id="list-service_grid5" class="list-service list-service__v2 mb16">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="itemt">
-                                <h3 class="title">CYBEROTUS CYBERBILL</h3>
-                                <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
-                                <div class="price">
-                                    <div class="price-down">Thấp nhấp</div>
-                                    <div class="all">
-                                        1.210.000 <span>đ</span>
-                                    </div>
-                                </div>
-                                <div class="goi">
-                                    <div>Gói : <b>Cloud-300</b></div>
-                                    <span>|</span>
-                                    <div>Số lượng: <b>300</b></div>
-                                </div>
-                                <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                <div class="service">
-                                    <h3 class="title">Lợi ích</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <h3 class="title">Chi phí bao gồm</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <a href="#" class="color-blue">Xem thêm thông tin</a>
-                                    <div class="border-bottom mb10 mt15"></div>
-                                    <div class="grid grid__3 mb24">
-                                        <div><img src="images/graphics/doi-tac2.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac3.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac4.png" alt=""></div>
-                                    </div>
-                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                    <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                </div>
+            <div id="dich-vu-dang-ky-kinh-doanh" style="display: none;">
+                <div class="txt_24 mb16"><b>Dịch vụ đăng ký kinh doanh</b></div>
+                <p class="txt_16 color-gray">Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử, giao dịch</p>
+                <a href="#" class="btn-default min">Tìm hiểu thêm </a>
+                <div class="border-bottom mb24 mt24"></div>
+                <div class="box-choose-service">
+                    <div class="grid grid__4">
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-city.svg" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="itemt focus">
-                                <div class="tag">Được nhiều người mua</div>
-                                <h3 class="title">EFY</h3>
-                                <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
-                                <div class="price">
-                                    <div style="height: 18px;"></div>
-                                    <div class="all">
-                                        5.000.000 <span>đ</span>
-                                    </div>
-                                </div>
-                                <div class="goi">
-                                    <div>Gói : <b>Cloud-300</b></div>
-                                    <span>|</span>
-                                    <div>Số lượng: <b>300</b></div>
-                                </div>
-                                <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                <div class="service">
-                                    <h3 class="title">Lợi ích</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <h3 class="title">Chi phí bao gồm</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <a href="#" class="color-blue">Xem thêm thông tin</a>
-                                    <div class="border-bottom mb10 mt15"></div>
-                                    <div class="grid grid__3 mb24">
-                                        <div><img src="images/graphics/doi-tac2.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac3.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac4.png" alt=""></div>
-                                    </div>
-                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                    <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                </div>
+                            <h3>Thủ tục đăng ký
+                                kinh doanh & Thành lập
+                                doanh nghiệp mới</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-print.svg" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="itemt">
-                                <h3 class="title">MYINVOICE</h3>
-                                <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
-                                <div class="price">
-                                    <div style="height: 18px;"></div>
-                                    <div class="all">
-                                        6.000.000 <span>đ</span>
-                                    </div>
-                                </div>
-                                <div class="goi">
-                                    <div>Gói : <b>Cloud-300</b></div>
-                                    <span>|</span>
-                                    <div>Số lượng: <b>300</b></div>
-                                </div>
-                                <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                <div class="service">
-                                    <h3 class="title">Lợi ích</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <h3 class="title">Chi phí bao gồm</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <a href="#" class="color-blue">Xem thêm thông tin</a>
-                                    <div class="border-bottom mb10 mt15"></div>
-                                    <div class="grid grid__3 mb24">
-                                        <div><img src="images/graphics/doi-tac2.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac3.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac4.png" alt=""></div>
-                                    </div>
-                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                    <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                </div>
+                            <h3>Thủ tục & thay đổi  </br>
+                                Đăng ký kinh doanh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-tritue.svg" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="itemt">
-                                <h3 class="title">EASY</h3>
-                                <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
-                                <div class="price">
-                                    <div style="height: 18px;"></div>
-                                    <div class="all">
-                                        6.800.000 <span>đ</span>
-                                    </div>
-                                </div>
-                                <div class="goi">
-                                    <div>Gói : <b>Cloud-300</b></div>
-                                    <span>|</span>
-                                    <div>Số lượng: <b>300</b></div>
-                                </div>
-                                <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                <div class="service">
-                                    <h3 class="title">Lợi ích</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <h3 class="title">Chi phí bao gồm</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <a href="#" class="color-blue">Xem thêm thông tin</a>
-                                    <div class="border-bottom mb10 mt15"></div>
-                                    <div class="grid grid__3 mb24">
-                                        <div><img src="images/graphics/doi-tac2.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac3.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac4.png" alt=""></div>
-                                    </div>
-                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                    <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                </div>
+                            <h3>Thủ tục </br>
+                                Sở hữu trí tuệ</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-giayphep.svg" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="itemt">
-                                <h3 class="title">THÁI SƠN</h3>
-                                <p class="des">Được cung cấp bởi <b>CyberLotus</b></p>
-                                <div class="price">
-                                    <div style="height: 18px;"></div>
-                                    <div class="all">
-                                        7.200.000 <span>đ</span>
-                                    </div>
-                                </div>
-                                <div class="goi">
-                                    <div>Gói : <b>Cloud-300</b></div>
-                                    <span>|</span>
-                                    <div>Số lượng: <b>300</b></div>
-                                </div>
-                                <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                <div class="mb24"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                <div class="service">
-                                    <h3 class="title">Lợi ích</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <h3 class="title">Chi phí bao gồm</h3>
-                                    <ul class="check">
-                                        <li>3 user license</li>
-                                        <li>Standard pattern library, including NPS surveys</li>
-                                    </ul>
-                                    <a href="#" class="color-blue">Xem thêm thông tin</a>
-                                    <div class="border-bottom mb10 mt15"></div>
-                                    <div class="grid grid__3 mb24">
-                                        <div><img src="images/graphics/doi-tac2.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac3.png" alt=""></div>
-                                        <div><img src="images/graphics/doi-tac4.png" alt=""></div>
-                                    </div>
-                                    <a href="#" class="btn-default full mb10">Lựa chọn dịch vụ này</a>
-                                    <div class="10"><a href="#" class="color-main">Mua luôn dịch vụ</a></div>
-                                </div>
-                            </div>
-                        </div>
+                            <h3>Thủ tục </br>
+                                Giấy phép đầu tư</h3>
+                        </a>
                     </div>
-                    <div class="swiper-button-next swiper-service-next">
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div class="swiper-button-prev swiper-service-prev">
-                        <i class="fa fa-angle-left"></i>
-                    </div>
-                    
                 </div>
             </div>
-            <a href="#" class="btn-default min">Cần tư vấn? </a>
+            <div id="dich-vu-ke-toan" style="display: none;">
+                <div class="txt_24 mb16"><b>Dịch vụ kế toán</b></div>
+                <p class="txt_16 color-gray">Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử, giao dịch</p>
+                <a href="#" class="btn-default min">Tìm hiểu thêm </a>
+                <div class="border-bottom mb24 mt24"></div>
+                <div class="box-choose-service">
+                    <div class="grid grid__4">
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-percel.svg" alt="">
+                            </div>
+                            <h3>Bảng giá dịch vụ
+                                báo cáo thuế</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-clock.svg" alt="">
+                            </div>
+                            <h3>Dịch vụ báo cáo
+                                thuế theo quý</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <div class="ava">
+                                <img src="images/icons/icon-print.svg" alt="">
+                            </div>
+                            <h3>Dịch vụ báo cáo
+                                tài chính năm</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
         
     </div>
 </section>
 
 <section class="box-customer clearfix">
     <div class="container">
-        <div class="swiper-container">
+        <div class="head mb60">
+            <h2 class="title-cate">Khách hàng nói về chúng tôi</h2>
+            <p>Giải pháp được sử dụng để kê khai nộp thuế trực tuyến, kê khai hải quan điện tử, giao dịch</p>
+        </div>
+        <div class="grid grid__3">
+            <div class="article-itemt__v2">
+                <div class="article-content">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="logo"><img src="images/graphics/grab.png" alt=""></div>
+                        </div>
+                    </div>
+                    <P class="des">
+                        “Tất cả sản phẩm từ NewCA thật tuyệt vời, giúp tôi tiết kiệm được thời gian và tăng
+                        trưởng <b><u>20% doanh thu</u></b> nhanh chóng”
+                    </P>
+                    
+                </div>
+                <div class="article-thumb">
+                    <div class="ava">
+                        <div class="thumb_img thumb_1x1">
+                            <img src="images/graphics/user.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="cv">
+                        <b>Nguyễn Hoàng Long</b>
+                        <div>Trưởng phòng kinh doanh</div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-itemt__v2">
+                <div class="article-content">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="logo"><img src="images/graphics/grab.png" alt=""></div>
+                        </div>
+                    </div>
+                    <P class="des">
+                        “Tất cả sản phẩm từ NewCA thật tuyệt vời, giúp tôi tiết kiệm được thời gian và tăng
+                        trưởng <b><u>20% doanh thu</u></b> nhanh chóng”
+                    </P>
+                    
+                </div>
+                <div class="article-thumb">
+                    <div class="ava">
+                        <div class="thumb_img thumb_1x1">
+                            <img src="images/graphics/user.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="cv">
+                        <b>Nguyễn Hoàng Long</b>
+                        <div>Trưởng phòng kinh doanh</div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-itemt__v2">
+                <div class="article-content">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="logo"><img src="images/graphics/grab.png" alt=""></div>
+                        </div>
+                    </div>
+                    <P class="des">
+                        “Tất cả sản phẩm từ NewCA thật tuyệt vời, giúp tôi tiết kiệm được thời gian và tăng
+                        trưởng <b><u>20% doanh thu</u></b> nhanh chóng”
+                    </P>
+                    
+                </div>
+                <div class="article-thumb">
+                    <div class="ava">
+                        <div class="thumb_img thumb_1x1">
+                            <img src="images/graphics/user.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="cv">
+                        <b>Nguyễn Hoàng Long</b>
+                        <div>Trưởng phòng kinh doanh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="article-itemt">
@@ -643,7 +1121,7 @@
                 <i class="fa fa-angle-left"></i>
             </div>
             <div class="swiper-pagination"></div>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -785,7 +1263,7 @@
                     </h2>
                     <p>Từ việc đưa ra lời khuyên từ chuyên gia đến giải quyết các vấn đề phức tạp, chúng tôi đã giúp
                         bạn.</p>
-                    <a href="#" class="btn-default yellow txt_black">Xem hỗ trợ khách hàng</a>
+                    <a href="#" class="btn-default yellow txt_black">Yêu cầu hỗ trợ</a>
                 </div>
                 <div class="col-md-8 txt-content">
                     <div class="grid grid__3">
@@ -817,7 +1295,7 @@
                 </div>
             </div>
         </div>
-        <div class="box-video">
+        <!-- <div class="box-video">
             <div class="row">
                 <div class="col-lg-6">
                     <h3 class="text-white txt_20 mb20">Xem video hỗ trợ</h3>
@@ -881,7 +1359,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
