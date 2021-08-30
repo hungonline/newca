@@ -215,7 +215,8 @@
         });
 
         var swiperCustomer = new Swiper(".box-customer .swiper-container", {
-            spaceBetween: 30,
+            slidesPerView: 3,
+            spaceBetween: 24,
             navigation: {
                 nextEl: ".swiper-customer-next",
                 prevEl: ".swiper-customer-prev",
@@ -224,6 +225,15 @@
                 el: ".box-customer .swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                991: {
+                    slidesPerView: 2,
+                },
+                414: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                }
+            }
         });
         var swiperWhy = new Swiper(".box-why-choose .swiper-container", {
             slidesPerView: 1,

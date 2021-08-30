@@ -319,7 +319,16 @@
         border-radius: 12px;
         padding: 24px;
         position: relative;
-
+        .tag {
+            background: linear-gradient(131.88deg, #FF8800 -1.76%, #E63535 134.61%);
+            border-radius: 6px 6px 0px 0px;
+            color: #fff;
+            line-height: 28px;
+            position: absolute;
+            top: -28px;
+            left: 0;
+            padding: 0 16px;
+        }
         .title {
             font-size: 14px;
             font-weight: bold;
@@ -330,7 +339,7 @@
         }
 
         .des {
-            height: 60px;
+            height: 42px;
             overflow: hidden;
         }
 
@@ -339,15 +348,7 @@
             color: #555770
         }
         .uu-viet{
-            position: absolute;
             background: linear-gradient(172.9deg, #AC5DD9 -1.32%, #004FC4 173.72%);
-            border-radius: 6px 6px 0px 0px;
-            color: #fff;
-            font-size: 14px;
-            line-height: 28px;
-            padding: 0 16px;
-            top: 90px;
-            left: 0;
         }
         .price {
             font-size: 14px;
@@ -425,18 +426,6 @@
         &:hover {
             border: 1px solid #fff;
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-
-            .tag {
-                background: linear-gradient(131.88deg, #FF8800 -1.76%, #E63535 134.61%);
-                border-radius: 6px 6px 0px 0px;
-                color: #fff;
-                line-height: 28px;
-                position: absolute;
-                top: -28px;
-                left: 0;
-                padding: 0 16px;
-            }
-
             .price {
                 .all {
                     color: #E63535;
@@ -526,7 +515,7 @@
 
     @media (max-width: 991px) {
         .swiper-container {
-            margin: -20px -15px -30px -15px;
+            margin: -10px -15px -30px -15px;
 
             .swiper-button-prev,
             .swiper-button-next {
@@ -573,8 +562,8 @@
     }
 }
 .box-customer {
-    background: #750E6C;
-    padding: 100px 0;
+    background: #4F064B;
+    padding: 100px 0 120px 0;
     .head{
         text-align: center;
         color: #fff;
@@ -690,6 +679,12 @@
                 }
             }
             .des{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                height: 72px;
                 u{
                     font-weight: bold;
                 }
@@ -718,34 +713,37 @@
         @media (max-width: 1025px) {
             .article-content{
                 padding: 15px 15px 30px 15px;
-                font-size: 14px;
             }
             
         }
     }
+
     .swiper-button-prev,
     .swiper-button-next {
         background: rgba(79, 6, 75, .8);
         width: 32px;
-        height: 32px;
+        height: 62px;
         border-radius: 6px;
         border: 0;
-        line-height: 32px;
+        line-height: 62px;
         color: #fff;
         font-size: 20px;
-        top: 37px;
+        top: 90px;
         margin-top: 0;
     }
 
     .swiper-button-prev {
-        left: inherit;
-        right: 40px;
+        left: -40px;
     }
-
+    .swiper-button-next{
+        right: -40px;
+    }
     .swiper-pagination {
-        width: auto;
-        left: 505px;
-        bottom: -5px;
+        width: 100%;
+        bottom: -40px;
+        span{
+            margin: 0 5px;
+        }
     }
 
     @media (max-width: 991px) {
@@ -797,6 +795,16 @@
                     left: 15px;
                 }
             }
+        }
+        .swiper-button-prev,
+        .swiper-button-next{
+            top: 60px;
+        }
+        .swiper-button-prev {
+            left: 0px;
+        }
+        .swiper-button-next{
+            right: 0px;
         }
     }
 }
