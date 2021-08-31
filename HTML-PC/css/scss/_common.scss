@@ -804,6 +804,16 @@ input {
             left: 8px;
             right: 8px;
         }
+        select.form-control{
+            border: 1px solid #E4E4EB;
+            background: #F2F2F5;
+            border-radius: 4px;
+            color: #750E6C;
+            font-size: 14px;
+            padding-left: 5px;
+            font-weight: bold;
+            height: 36px;
+        }
         .price{
             font-size: 18px;
             font-weight: bold;
@@ -852,7 +862,7 @@ input {
     }
     &__v3{
         .confir_res{
-            width: 128x;
+            width: 128px;
             height: 66px;
             margin: 0 8px 8px 0;
         }
@@ -871,10 +881,13 @@ input {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 10px;
-         .confir_res{
-             width: 100%;
-             margin: 0;
-         }   
+        .confir_res{
+            width: 100%;
+            margin: 0;
+        } 
+        .phu-luc{
+            width: 100%;
+        }  
     }
 }
 .radio-checklist{
@@ -1011,5 +1024,59 @@ input {
                 color: #4F064B;
             }
         }
+    }
+}
+
+//custom select
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    &.form-group{
+        background: #e6eaf0;
+        border-radius: 0;
+        border: 0;
+        height: 35px;
+    }
+    select {
+        display: none;
+    }
+    .select-selected {
+        &::after{
+            content: "";
+            border: solid #222;
+            border-width: 1px 0px 0px 1px;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 13px;
+            top: 12px;
+            transform: rotate(-135deg);
+        }
+        &.select-arrow-active:after{
+            transform: rotate(45deg);
+            top: 14px;
+        }
+    }
+    .select-items div,.select-selected {
+        cursor: pointer;
+        user-select: none;
+    }
+    .select-items {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(118, 118, 118, .3);
+        div{
+            padding: 10px;
+            &:hover{
+                color: #447fb7;
+            }
+        }
+    }
+    .select-hide {
+        display: none;
     }
 }

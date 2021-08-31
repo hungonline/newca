@@ -189,6 +189,9 @@
     &.sticky {
         background-color: #fff;
         box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
+        .main-menu{
+            top: 52px;
+        }
     }
 
     .flex_row {
@@ -476,7 +479,6 @@
                     }
                 }
             }
-
             position: fixed;
             top: 93px;
             bottom: 0;

@@ -2148,8 +2148,11 @@
         .col-center {
             .grid__2 {
                 grid-template-columns: repeat(1, 1fr);
-                column-gap: 16px;
-                row-gap: 16px;
+                column-gap: 10px;
+                row-gap: 10px;
+                .confir_res{
+                    width: 100%;
+                }
             }
         }
 
