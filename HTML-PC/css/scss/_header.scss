@@ -51,8 +51,34 @@
             }
         }
     }
-    .search-btn {
+    .box-search-pc{
         display: inline-block;
+        margin-right: 15px;
+        position: relative;
+        button {
+            border: 0;
+            background: none;
+            position: absolute;
+            top: 2px;
+            left: 7px;
+            color: #fff;
+        }
+        input{
+            background: #912D7E;
+            border-radius: 61px;
+            border: 0;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 1);
+            height: 22px;
+            padding: 0 4px 0 30px;
+            width: 160px;
+            @include placeholder{
+                color: rgba(255, 255, 255, .6);
+            }
+        }
+    }
+    .search-btn {
+        display: none;
         cursor: pointer;
         position: relative;
         margin-right: 11px;
@@ -184,6 +210,11 @@
         .nav{
             display: none;
         }
+        .box-search-pc{
+            input{
+                width: 120px;
+            }
+        }
         .search-btn {
             position: static
         }
@@ -201,6 +232,20 @@
 
             input {
                 height: 53px;
+            }
+        }
+    }
+    @media (max-width: 380px) {
+        .box-search-pc{
+            margin-right: 10px;
+            input{
+                width: 110px;
+            }
+        }
+        .my_user{
+            padding-left: 20px;
+            &::before{
+                left: 10px;
             }
         }
     }
