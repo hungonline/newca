@@ -22,7 +22,35 @@
         display: flex;
         align-items: center;
     }
-
+    .nav{
+        position: relative;
+        margin-right: 20px;
+        &::before{
+            content: "";
+            background: rgba(255,255,255,0.25);
+            height: 16px;
+            width: 1px;
+            position: absolute;
+            right: 0;
+            top: 1px;
+        }
+        li{
+            margin-right: 20px;
+        }
+        .info{
+            position: relative;
+            padding-right: 15px;
+            &::before{
+                content: "";
+                border-left: 4px solid rgba(255,255,255,0);
+                border-right: 4px solid rgba(255,255,255,0);
+                border-top: 5px solid #fff;
+                position: absolute;
+                right: 0;
+                top: 7px;
+            }
+        }
+    }
     .search-btn {
         display: inline-block;
         cursor: pointer;
@@ -153,7 +181,9 @@
         .left {
             font-size: 0
         }
-
+        .nav{
+            display: none;
+        }
         .search-btn {
             position: static
         }
@@ -286,6 +316,7 @@
                     line-height: 40px;
                     display: flex;
                     border-radius: 6px;
+                    position: relative;
                 }
 
                 .sub_menu {
@@ -331,6 +362,18 @@
                         }
                     }
                 }
+                &:hover{
+                    &>a{
+                        &::before{
+                            content: "";
+                            background: var(--colormain);
+                            height: 2px;
+                            position: absolute;
+                            width: 100%;
+                            bottom: -11px;
+                        }
+                    }
+                }
             }
         }
 
@@ -343,14 +386,14 @@
                 overflow: hidden;
                 position: absolute;
                 top: 62px;
-                left: 0;
-                width: 100%;
+                left: 50%;
+                transform: translate(-50%, 0);
                 margin: 0;
                 right: 0;
                 z-index: 10;
-                background: #fff;
+                background: #F4F4F4;
                 text-align: left;
-                border-top: 1px solid #e5e5e5;
+                padding: 48px;
 
                 .bg-white {
                     padding: 48px 0;
@@ -370,7 +413,7 @@
                     flex-wrap: wrap;
 
                     .ava {
-                        background: #F5F7FA;
+                        background: #fff;
                         border-radius: 10px;
                         position: relative;
                         width: 56px;
@@ -506,7 +549,11 @@
                         width: 100%;
                         padding: 0 15px;
                         position: relative;
-                        border-radius: 0
+                        border-radius: 0;
+                        &::before{
+                            display: none;
+                        }
+                        
                     }
 
                     .sub_menu {
@@ -775,7 +822,7 @@ body.active {
     width: 100%;
     position: fixed;
     height: 100%;
-    top: 200px;
+    top: 0;
     z-index: -1;
     opacity: 0;
     -moz-transition: .2s ease-out;
