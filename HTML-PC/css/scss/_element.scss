@@ -3362,3 +3362,103 @@
         }
     }
 }
+
+.page-search{
+    padding-top: 60px;
+    .box-search{
+        width: 100%;
+        margin-bottom: 30px;
+        .input_search{
+            background: rgba(107, 119, 154, 0.1);
+            border: 0;
+            border-radius: 67px;
+            height: 74px;
+            padding-right: 80px;
+            padding-left: 70px;
+            font-size: 18px;
+            width: 100%;
+            outline: 0;
+        }
+        .icon_seach_web{
+            position: absolute;
+            background: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 0;
+            left: 28px;
+            top: 20px;
+            color: #1D1D1F;
+            cursor: pointer;
+            svg{
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .btn_reset{
+            position: absolute;
+            top: 25px;
+            right: 45px;
+            background: none;
+            border: 0;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            font-size: 30px;
+            font-family: -webkit-body;
+            color: #000;
+            line-height: 10px;
+            cursor: pointer;
+        }
+    }
+    .result-search{
+        font-size: 16px;
+        border-bottom:2px solid rgba(34, 43, 69, 0.7);
+        margin-bottom: 24px;
+        padding-bottom: 12px;
+    }
+    .list-searh{
+        li{
+            border-bottom: 1px solid rgba(107, 119, 154, 0.1);
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+            .title_new{
+                color: #4F064B;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 13px;
+            }
+            .link{
+                color: #2562FF;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .box-search{
+            .input_search{
+                height: 60px;
+            }
+            .icon_seach_web{
+                top: 12px;
+            }
+            .btn_reset{
+                top: 17px;
+                right: 35px;
+            }
+        }
+        .list-searh{
+            li{
+                padding-bottom: 15px;
+                margin-bottom: 20px; 
+                .title_new{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
